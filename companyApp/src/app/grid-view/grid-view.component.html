@@ -1,0 +1,12 @@
+<div class="container">
+    <!-- <mat-card *ngFor="let user of userObj">
+     <mat-card-header>
+      <mat-card-title>Username : {{user.username}}</mat-card-title>
+     </mat-card-header>
+     <mat-card-content>
+      <p>Password : {{user.password}}</p>
+     </mat-card-content>
+    </mat-card> -->
+    <app-card *ngFor="let user of userObj"
+    [user]="user" ></app-card>
+</div>

@@ -1,0 +1,15 @@
+{
+  "name": "js-unittesting-mocha",
+  "version": "1.0.0",
+  "description": "usage of mocha and chai in js unit testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Thrush",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.2.1"
+  }
+}

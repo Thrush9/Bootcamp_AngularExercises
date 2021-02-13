@@ -1,0 +1,15 @@
+.container-fluid{
+    padding :15px;
+    min-height: 385px;
+    background-color: rgb(165, 192, 243);
+    display: flex ;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+small{
+    color: red;
+}
+
+

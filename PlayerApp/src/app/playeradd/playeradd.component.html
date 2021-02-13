@@ -1,0 +1,36 @@
+<mat-accordion class="example-headers-align" multi>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title >
+              Details
+            </mat-panel-title>
+            <mat-panel-description>
+              Add Player Data
+              <mat-icon>account_circle</mat-icon>
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+      
+         <form #addform="ngForm" (ngSubmit)="addPlayer()" class="form-field">
+          <mat-form-field>
+            <mat-label>Player Id</mat-label>
+            <input matInput type="text" name="id" #pid="ngModel"
+            placeholder="Enter player Id" [(ngModel)]="player.id" required>
+          </mat-form-field>  
+          <!-- <small *ngIf="pid.touched && pid.invalid">Id can't be empty</small> -->
+          <mat-form-field>
+            <mat-label>Player Name</mat-label>
+            <input matInput type="text" name="name" #pname="ngModel"
+            placeholder="Enter player name" [(ngModel)]="player.name" required>
+          </mat-form-field>
+          <!-- <small *ngIf="pname.touched && pname.invalid">Name can't be empty</small> -->
+          <mat-form-field>
+            <mat-label>Player Strength</mat-label>
+            <input matInput type="text" name="skill" #pcountry="ngModel"
+              placeholder="Enter player country"  [(ngModel)]="player.country" required>
+          </mat-form-field>
+          <!-- <small *ngIf="pcountry.touched && pcountry.invalid">country can't be empty</small> -->
+          <button mat-raised-button color="primary" [disabled]="!addform.form.valid"
+            type="submit" >Add</button>
+        </form>
+        </mat-expansion-panel>
+    </mat-accordion>

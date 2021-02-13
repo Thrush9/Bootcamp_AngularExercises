@@ -1,0 +1,33 @@
+<div class="container">    
+  <mat-card class="example-card">
+      <mat-card-header>
+        <mat-card-title>Login Credentials</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <form  #loginForm="ngForm" (ngSubmit)="validateLogin()" class="form-field">
+        <mat-form-field>
+          <mat-label>Username</mat-label>
+          <input #usname="ngModel" matInput type="text" name="username" [(ngModel)]="user.username"  
+           required>
+        </mat-form-field> 
+        <div *ngIf="usname.invalid && (usname.touched && usname.dirty)">
+          <small>Name can't be empty</small>
+        </div> 
+        <mat-form-field>
+            <mat-label>Password</mat-label>
+            <input #uspass="ngModel" matInput type="password" name="password" [(ngModel)]="user.password"
+             required minlength="9">
+        </mat-form-field>
+        <div *ngIf="uspass.invalid && (uspass.touched && uspass.dirty)">
+          <small *ngIf="uspass.errors">Password Length : Min 9 characters</small>
+        </div> 
+      </form>
+      </mat-card-content>
+      <mat-card-actions class="form-buttons">
+        <button mat-raised-button color="primary" type="submit" 
+         [disabled]="!loginForm.form.valid">Validate</button>
+        <button mat-raised-button color="primary" (click)="showDetails()">Login</button>
+      </mat-card-actions>
+  </mat-card>
+</div>
+    

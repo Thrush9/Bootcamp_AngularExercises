@@ -1,0 +1,22 @@
+<mat-card class="palyer-card text-center">
+    <!-- <mat-card-header class="d-flex-row align-items-center">
+      <mat-card-title >Edit Player</mat-card-title>
+    </mat-card-header> -->
+    <h2>Edit Player</h2>
+    <mat-card-content>
+        <mat-form-field>
+            <mat-label>Player Id</mat-label>
+            <input matInput type="number" [(ngModel)]="editplayer.id" required>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Player Name</mat-label>
+            <input matInput type="text" [(ngModel)]="editplayer.name" required>
+        </mat-form-field>
+        <mat-form-field>
+                <mat-label>Player Country</mat-label>
+                <input matInput type="text" [(ngModel)]="editplayer.country" required>
+        </mat-form-field>
+    </mat-card-content>
+    <button mat-raised-button color="primary" class="m-1" (click)="updatedata()" >Update</button>
+    <button mat-raised-button color="primary"  class="m-1" (click)="close()" >close</button>
+</mat-card>    

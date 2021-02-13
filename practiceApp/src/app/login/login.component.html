@@ -1,0 +1,28 @@
+<div class="container">
+
+    <h1>Welcome A&A Furnitures</h1>
+      
+          <mat-card class="example-card">
+            <mat-card-header>
+              <mat-card-title>Login Credentials</mat-card-title>
+            </mat-card-header>
+            <mat-card-content class="form-field">
+                    <mat-form-field>
+                      <mat-label>Username</mat-label>
+                      <input matInput type="text" [(ngModel)]="userObj.username">
+                    </mat-form-field>
+              
+                    <mat-form-field>
+                      <mat-label>Password</mat-label>
+                      <input matInput type="password" [(ngModel)]="userObj.password">
+                    </mat-form-field>
+                    <span>{{displayObj}}</span>
+            </mat-card-content>
+            <mat-card-actions class="form-buttons">
+                <button mat-raised-button color="primary" (click)="showDetails()">Login</button>
+                <button mat-raised-button color="primary" (click)="addUser()">Register</button>
+            </mat-card-actions>
+          </mat-card>
+
+    </div>
+    

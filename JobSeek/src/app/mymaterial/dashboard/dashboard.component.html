@@ -1,0 +1,74 @@
+<div class="container">
+
+<mat-accordion class="example-headers-align" multi>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header class="bg-secondary">
+        <mat-panel-title >
+          Profile  Info
+        </mat-panel-title>
+        <mat-panel-description>
+          Personal Details
+          <mat-icon>account_circle</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <div class="signup-form">
+        <img mat-card-image src="/assets/Images/profile.jpeg" 
+        class="rounded mx-auto d-block" width="150px" height="100px" alt="Photo of a Shiba Inu">
+      <div class="form-field">
+      <mat-form-field>
+        <mat-label>Full Name</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+  
+      <mat-form-field>
+        <mat-label>Qualification</mat-label>
+        <input matInput type="text"> 
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Experience</mat-label>
+        <input matInput type="number">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Address</mat-label>
+        <textarea matInput></textarea>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Username</mat-label>
+        <input matInput type="text">
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-label>Password</mat-label>
+        <input matInput type="password">
+      </mat-form-field>
+    </div>
+    </div>
+    <mat-action-row class="bg-secondary">
+        <button mat-raised-button color="basic">Sign Up</button>
+      </mat-action-row>
+  
+    
+  
+    </mat-expansion-panel>
+    <!-- <mat-expansion-panel >
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Destination
+        </mat-panel-title>
+        <mat-panel-description>
+          Type the country name
+          <mat-icon>map</mat-icon>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+  
+      <mat-form-field>
+        <mat-label>Country</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </mat-expansion-panel> -->
+  </mat-accordion>
+</div>

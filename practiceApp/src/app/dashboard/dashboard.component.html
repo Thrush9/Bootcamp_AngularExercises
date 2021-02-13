@@ -1,0 +1,29 @@
+
+<div class="container">
+  <mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span>Top Rated Movies</span>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+<mat-list class="movies-list">
+    <mat-list-item *ngFor="let mov of movieArray | paginate: {itemsPerPage:10, currentPage: change}" >
+      <mat-icon mat-list-icon>folder</mat-icon>
+      <div mat-line>Title : {{mov['title']}}</div>
+      <div mat-line>Release : {{mov['release_date']}} </div>
+      <div mat-line>IMDB Rating : {{mov['vote_average']}} </div>
+    </mat-list-item>
+</mat-list>
+
+<div class= "page-controls">
+  <pagination-controls (pageChange)="change=$event"></pagination-controls>
+</div>
+
+</div>

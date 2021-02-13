@@ -1,0 +1,21 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <h2>Digital Library</h2>
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>share</mat-icon>
+    </button>
+  </mat-toolbar>
+<div class="container-fluid">
+    <span class="class-book m-2 p-2">Book List</span>
+    <ul class="m-2 p-2">
+        <li>Python</li>
+        <li>Cloud</li>
+        <li>Multimedia</li>
+    </ul>
+    <div class="class-vendor m-2 p-2">{{vendor}}</div>
+    <h1 id="hid" class="m-2 p-2">Address : {{addr}}</h1>
+    <button mat-stroked-button color="primary" class="class-submit m-2 bg-gray">Sign In</button>
+</div>

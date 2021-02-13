@@ -1,0 +1,18 @@
+<mat-card class="palyer-card">
+    <mat-card-header class="d-flex-row align-items-center">
+        <mat-card-title>Player Info</mat-card-title>
+          <button mat-icon-button aria-label="Example icon button with a edit icon"
+           (click)="editPlayer(player)">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button aria-label="Example icon button with a delete icon"
+           (click)="deletePlayer(player.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </mat-card-header>
+        <mat-card-content>
+          <p>Id : {{player.id}}</p>
+          <p>Name : {{player.name}}</p>
+          <p>Country : {{player.country}}</p>
+    </mat-card-content>
+</mat-card>

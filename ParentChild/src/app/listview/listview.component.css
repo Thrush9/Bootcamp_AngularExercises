@@ -1,0 +1,6 @@
+.container{
+    margin: 20px;
+    padding : 20px;
+    border : orangered 3px solid;
+    min-height: 100px;
+}
